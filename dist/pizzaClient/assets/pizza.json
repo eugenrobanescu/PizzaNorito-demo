@@ -1,0 +1,463 @@
+{
+  "food": [
+    {
+      "_id": { "$oid": "5f2131519b13bf623427c958" },
+      "ingredients": [
+        "sos rosii",
+        "sunca praga",
+        "bacon",
+        "salam",
+        "ciuperci",
+        "masline",
+        "ardei gras",
+        "mozzarella",
+        "carnati"
+      ],
+      "type": "pizza",
+      "img": "pizza1-300x300.jpg",
+      "foodName": "Specialitatea casei",
+      "weight": "600g",
+      "price": 24.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f21317f9b13bf623427c959" },
+      "ingredients": [
+        "sos rosii",
+        "sunca praga",
+        "bacon",
+        "salam",
+        "ciuperci",
+        "mozzarella",
+        "carnati"
+      ],
+      "type": "pizza",
+      "img": "pizza2.1-300x300.jpg",
+      "foodName": "Taraneasca",
+      "weight": "600g",
+      "price": 24.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2131a79b13bf623427c95a" },
+      "ingredients": [
+        "sos rosii",
+        "sunca praga",
+        "bacon",
+        "salam",
+        "mozzarella",
+        "carnati",
+        "ou",
+        "rosii"
+      ],
+      "type": "pizza",
+      "img": "pizza4-300x300.jpg",
+      "foodName": "Carnivora",
+      "weight": "600g",
+      "price": 24.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2132b89b13bf623427c95b" },
+      "ingredients": [
+        "sos rosii",
+        "sunca praga",
+        "bacon",
+        "cartofi",
+        "mozzarella",
+        "carnati",
+        "ou",
+        "rosii",
+        "telemea"
+      ],
+      "type": "pizza",
+      "img": "pizza6-300x300.jpg",
+      "foodName": "Potato",
+      "weight": "600g",
+      "price": 24.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2132e29b13bf623427c95c" },
+      "ingredients": [
+        "sos rosii",
+        "piept de pui",
+        "cartofi",
+        "mozzarella",
+        "ou",
+        "rosii"
+      ],
+      "type": "pizza",
+      "img": "pizza7-300x300.jpg",
+      "foodName": "Kebab",
+      "weight": "600g",
+      "price": 24.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f21334b9b13bf623427c95d" },
+      "ingredients": ["sos rosii", "mozzarella"],
+      "type": "pizza",
+      "img": "pizza10-300x300.jpg",
+      "foodName": "Margherita",
+      "weight": "400g",
+      "price": 20,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2134439b13bf623427c95e" },
+      "ingredients": ["sos rosii", "mozzarella", "sunca praga"],
+      "type": "pizza",
+      "img": "pizza11-300x300.jpg",
+      "foodName": "PROSCIUTTO",
+      "weight": "500g",
+      "price": 22,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2134609b13bf623427c95f" },
+      "ingredients": ["sos rosii", "mozzarella", "ciuperci"],
+      "type": "pizza",
+      "img": "pizza12-300x300.jpg",
+      "foodName": "Funghi",
+      "weight": "500g",
+      "price": 21,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2134cd9b13bf623427c960" },
+      "ingredients": [
+        "sos rosii",
+        "mozzarella",
+        "ciuperci",
+        "masline",
+        "sunca praga"
+      ],
+      "type": "pizza",
+      "img": "pizza13-300x300.jpg",
+      "foodName": "Romana",
+      "weight": "570g",
+      "price": 23,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2135079b13bf623427c961" },
+      "ingredients": ["sos rosii", "mozzarella", "salam uscat", "sunca praga"],
+      "type": "pizza",
+      "img": "pizza14-300x300.jpg",
+      "foodName": "Prosciutto salami",
+      "weight": "500g",
+      "price": 22.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2136109b13bf623427c962" },
+      "ingredients": [""],
+      "type": "pizza",
+      "img": "sos-dulce.jpg",
+      "foodName": "Sos Dulce",
+      "weight": "70g",
+      "price": 4.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2136209b13bf623427c963" },
+      "ingredients": [""],
+      "type": "pizza",
+      "img": "sos-picant.jpg",
+      "foodName": "Sos picant",
+      "weight": "70g",
+      "price": 4.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f21362a9b13bf623427c964" },
+      "ingredients": [""],
+      "type": "pizza",
+      "img": "sos-usturoi.jpg",
+      "foodName": "Sos usturoi",
+      "weight": "70g",
+      "price": 4.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2136799b13bf623427c965" },
+      "ingredients": ["paste", "bacon", "ou", "smantana"],
+      "type": "pasta",
+      "img": "pasta6.jpg",
+      "foodName": "Paste carbonara",
+      "weight": "500g",
+      "price": 27.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2136d79b13bf623427c966" },
+      "ingredients": ["paste", "sos rosii", "bacon", "peperoncino", "usturoi"],
+      "type": "pasta",
+      "img": "pasta1.jpg",
+      "foodName": "Paste arabiatta",
+      "weight": "500g",
+      "price": 27.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2136ff9b13bf623427c967" },
+      "ingredients": ["paste", "sos rosii", "ton", "usturoi"],
+      "type": "pasta",
+      "img": "pasta2.jpg",
+      "foodName": "Paste tonno",
+      "weight": "500g",
+      "price": 27.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2137209b13bf623427c968" },
+      "ingredients": [
+        "paste",
+        "sos rosii",
+        "sunca praga",
+        "masline",
+        "usturoi"
+      ],
+      "type": "pasta",
+      "img": "pasta3.jpg",
+      "foodName": "Paste milazene",
+      "weight": "500g",
+      "price": 27.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f21373a9b13bf623427c969" },
+      "ingredients": ["paste", "sos rosii", "carne vita"],
+      "type": "pasta",
+      "img": "pasta4.jpg",
+      "foodName": "Paste Bolognesse",
+      "weight": "500g",
+      "price": 27.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2137639b13bf623427c96a" },
+      "ingredients": [
+        "paste",
+        "sos rosii",
+        "ciuperci",
+        "dovlecei",
+        "ardei gras",
+        "ceapa"
+      ],
+      "type": "pasta",
+      "img": "pasta5.jpg",
+      "foodName": "Paste vegetariene",
+      "weight": "500g",
+      "price": 27.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2137af9b13bf623427c96b" },
+      "ingredients": ["paste", "sos rosii", "creveti", "patrunjel", "usturoi"],
+      "type": "pasta",
+      "img": "pasta7.jpg",
+      "foodName": "Paste cu creveti",
+      "weight": "500g",
+      "price": 28.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2138259b13bf623427c96c" },
+      "ingredients": [
+        "mix salata",
+        "mini mozzarella",
+        "prosciutto crudo",
+        "parmezan",
+        "piersica"
+      ],
+      "type": "salads",
+      "img": "salad1.jpg",
+      "foodName": "Salata upi",
+      "weight": "500g",
+      "price": 27,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f213ec09b13bf623427c96d" },
+      "ingredients": [
+        "rosii",
+        "castraveti",
+        "ardei gras",
+        "ceapa",
+        "maslina",
+        "branza feta",
+        "oregano"
+      ],
+      "type": "salads",
+      "img": "salad2.jpg",
+      "foodName": "Salata greceasca",
+      "weight": "550g",
+      "price": 26.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f213f079b13bf623427c96e" },
+      "ingredients": [
+        "rosii",
+        "castraveti",
+        "ton",
+        "ceapa",
+        "masline",
+        "porumb",
+        "ou"
+      ],
+      "type": "salads",
+      "img": "salad3.jpg",
+      "foodName": "Salata mediteraneana",
+      "weight": "600g",
+      "price": 26.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f213f2e9b13bf623427c96f" },
+      "ingredients": [
+        "rosii",
+        "castraveti",
+        "ton",
+        "ceapa",
+        "piept pui",
+        "porumb",
+        "ou"
+      ],
+      "type": "salads",
+      "img": "salad4.jpg",
+      "foodName": "Salata primavera",
+      "weight": "600g",
+      "price": 26.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f213f779b13bf623427c970" },
+      "ingredients": [
+        "rosii",
+        "salata",
+        "parmezan",
+        "piept pui",
+        "porumb",
+        "ou"
+      ],
+      "type": "salads",
+      "img": "salad5.jpg",
+      "foodName": "Salata caesar's",
+      "weight": "600g",
+      "price": 26.5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2141c89b13bf623427c971" },
+      "ingredients": ["afine", "visine", "capsuni", "ciocolata"],
+      "type": "dessert",
+      "img": "papanasi-700.jpg",
+      "foodName": "Papanasi 2 buc",
+      "weight": "500g",
+      "price": 24,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2144209b13bf623427c972" },
+      "ingredients": [
+        "ciocolata si banane",
+        "ciocolata si ananas",
+        "miere si nuca",
+        "caramel si nuca",
+        "ciocolata si nuca",
+        "ciocolata",
+        "dulceata de visine",
+        "afine"
+      ],
+      "type": "dessert",
+      "img": "clatite-600.jpg",
+      "foodName": "Clatite 2 buc.",
+      "weight": "400g",
+      "price": 20,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2144639b13bf623427c973" },
+      "ingredients": ["toping de caramel", "ciocolata,fructe de padure"],
+      "type": "dessert",
+      "img": "gogosi-600.jpg",
+      "foodName": "Gogosi 6 buc.",
+      "weight": "400g",
+      "price": 20,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2144959b13bf623427c974" },
+      "ingredients": ["vanilie,ciocolata,fistic,fructe de padure"],
+      "type": "dessert",
+      "img": "inghetata-600.jpg",
+      "foodName": "Inghetata",
+      "weight": "200g",
+      "price": 21,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2144cc9b13bf623427c975" },
+      "ingredients": [""],
+      "type": "drinks",
+      "img": "b1.png",
+      "foodName": "Coca cola 1.25l",
+      "weight": "1.25l",
+      "price": 8,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2144d49b13bf623427c976" },
+      "ingredients": [""],
+      "type": "drinks",
+      "img": "b2.jpg",
+      "foodName": "Fanta 1.25l",
+      "weight": "1.25l",
+      "price": 8,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2144db9b13bf623427c977" },
+      "ingredients": [""],
+      "type": "drinks",
+      "img": "b3.jpg",
+      "foodName": "Sprite 1.25l",
+      "weight": "1.25l",
+      "price": 8,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f21452a9b13bf623427c978" },
+      "ingredients": [""],
+      "type": "drinks",
+      "img": "b4.jpg",
+      "foodName": "Coca Cola doza",
+      "weight": "0.33l",
+      "price": 5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2145319b13bf623427c979" },
+      "ingredients": [""],
+      "type": "drinks",
+      "img": "b5.jpg",
+      "foodName": "Fanta doza",
+      "weight": "0.33l",
+      "price": 5,
+      "__v": { "$numberInt": "0" }
+    },
+    {
+      "_id": { "$oid": "5f2145399b13bf623427c97a" },
+      "ingredients": [""],
+      "type": "drinks",
+      "img": "b6.jpg",
+      "foodName": "Sprite doza",
+      "weight": "0.33l",
+      "price": 5,
+      "__v": { "$numberInt": "0" }
+    }
+  ]
+}
