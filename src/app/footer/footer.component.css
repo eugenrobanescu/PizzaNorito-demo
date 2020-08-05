@@ -1,0 +1,19 @@
+footer {
+  padding: 48px 0px;
+  background-color: black;
+  color: aliceblue;
+  font-size: 36px;
+}
+footer a {
+  color: honeydew;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: greenyellow;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    font-size: 30px;
+  }
+}

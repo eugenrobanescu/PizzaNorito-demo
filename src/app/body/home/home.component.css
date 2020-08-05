@@ -1,0 +1,16 @@
+img {
+  height: inherit;
+  width: inherit;
+}
+#carouselContainer {
+  padding: 0px;
+}
+
+.carousel-item {
+  height: 70vh;
+}
+.carousel-caption {
+  border-radius: 40px;
+  width: 20%;
+  background: rgba(0, 0, 0, 0.7);
+}

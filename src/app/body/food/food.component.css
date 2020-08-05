@@ -1,0 +1,79 @@
+.menu-content {
+  max-width: 980px;
+  margin: auto;
+  font-size: 24px;
+}
+.menu-content h1 {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+}
+.menu-container {
+  padding: 64px 0px 64px 0px;
+  background-color: black;
+}
+#pizza {
+  color: #000;
+  background-color: #fff;
+  padding: 52px 32px;
+  font-size: 36px;
+  display: block;
+}
+
+.buttons-container {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.buttons {
+  float: left;
+  font-size: 36px;
+  color: #fff;
+}
+
+#type {
+  background-color: #f44336;
+  width: 33.3333%;
+  padding: 12px 24px;
+}
+#next {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66.6666%;
+  background-color: black;
+}
+
+.my-pagination /deep/ .ngx-pagination {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.my-pagination /deep/ ul.ngx-pagination li a:hover {
+  background-color: rgb(180, 80, 80);
+}
+
+.my-pagination /deep/ .ngx-pagination li a {
+  color: white !important;
+}
+@media only screen and (max-width: 768px) {
+  .my-pagination /deep/ .ngx-pagination {
+    font-size: 20px;
+    padding: 0;
+  }
+  .my-pagination /deep/ .ngx-pagination li,
+  .my-pagination /deep/ .ngx-pagination a {
+    padding: 5px;
+  }
+  .my-pagination2 /deep/ .ngx-pagination {
+    font-size: 25px;
+    padding: 0 !important;
+  }
+}

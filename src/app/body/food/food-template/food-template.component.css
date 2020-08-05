@@ -1,0 +1,89 @@
+h1 span {
+  color: #fff !important;
+  background-color: #616161 !important;
+  float: right;
+  border-radius: 4px;
+  font-size: 36px;
+}
+h1 b {
+  font-size: 36px;
+}
+p {
+  color: #757575;
+}
+.img-container {
+  max-width: 300px;
+}
+img {
+  width: inherit;
+  width: 300px;
+  max-height: 300px;
+}
+.selectAmount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount-container input {
+  text-align: center;
+  border-radius: 50px;
+  width: 20%;
+  height: 40px;
+  padding: 28px 1px 28px 1px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3cbc8d;
+  color: white;
+}
+.amount-container a {
+  margin: 0px 15px;
+  cursor: "pointer";
+  background-color: lightblue;
+  padding: 2px 7px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input,
+a {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input:focus {
+  outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .text-grey {
+    font-size: 25px;
+  }
+  img {
+    max-width: 90px;
+  }
+  .forMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .amount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

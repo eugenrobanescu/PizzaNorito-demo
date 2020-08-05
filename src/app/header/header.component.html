@@ -1,0 +1,114 @@
+<div
+  id="headerContainer"
+  class="container-fluid d-flex justify-content-center align-items-center flex-column"
+>
+  <div
+    id="first-header-wrapper"
+    class="container-fluid d-flex justify-content-center"
+  >
+    <div id="logo"><h1>Pizza Norito</h1></div>
+    <div id="menu">
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >ACASA</a
+      >
+      <a routerLink="/about" routerLinkActive="active">ABOUT</a>
+      <a routerLink="/contact" routerLinkActive="active">CONTACT</a>
+    </div>
+
+    <div class="dropdown cart ml-auto">
+      <button
+        routerLink="/cart"
+        class="btn dropdown-toggle"
+        type="button"
+        id="dropdownMenu2"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        your cart
+      </button>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <a *ngIf="cartItems.length > 0" routerLink="/cart" class="dropdown-item"
+          ><i style="font-family: sans-serif;">{{ quantityItems }}</i> items in
+          cart <i style="font-family: sans-serif;"> {{ totalPrice }}</i> lei</a
+        >
+        <a *ngIf="cartItems.length < 1" class="dropdown-item"
+          ><i style="font-family: sans-serif;">{{ quantityItems }}</i> items in
+          cart <i style="font-family: sans-serif;"> {{ totalPrice }}</i> lei</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- SECOND -->
+
+  <div
+    id="second-header-wrapper"
+    class="container-fluid d-flex justify-content-center"
+  >
+    <button id="toggle-menu" (click)="toggleMenu()">
+      <i class="fa fa-bars"></i> &nbsp;<b>menu</b>
+    </button>
+    <ul class="list-group list-group-horizontal">
+      <li>
+        <a
+          (click)="fadeOut()"
+          routerLink="/cart"
+          routerLinkActive="active"
+          class="list-group-item hideIt"
+          >your <i class="fa fa-shopping-cart"></i> cart
+        </a>
+      </li>
+      <li>
+        <a
+          (click)="fadeOut()"
+          [routerLink]="['food', 'pizza']"
+          routerLinkActive="active"
+          class="list-group-item"
+          >PIZZA</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="['food', 'pasta']"
+          routerLinkActive="active"
+          class="list-group-item"
+          (click)="fadeOut()"
+          >PASTA</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="fadeOut()"
+          [routerLink]="['food', 'salads']"
+          routerLinkActive="active"
+          class="list-group-item"
+          >SALADS</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="fadeOut()"
+          [routerLink]="['food', 'dessert']"
+          routerLinkActive="active"
+          class="list-group-item"
+          >DESSERT</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="fadeOut()"
+          [routerLink]="['food', 'drinks']"
+          routerLinkActive="active"
+          class="list-group-item"
+          >DRINKS</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

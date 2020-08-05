@@ -1,0 +1,29 @@
+<div class="forMobile">
+  <h1>
+    <b>{{ food.foodName }}</b> &#160;
+    <b style="color: black;">{{ food.weight }}</b> <br />
+    <span class="w3-right w3-tag w3-dark-grey w3-round"
+      >{{ food.price }} RON</span
+    >
+  </h1>
+  <p class="text-grey">
+    {{ food.ingredients.join(", ") }}
+  </p>
+  <div class="selectAmount">
+    <div class="img-container">
+      <img src="`../../../../assets/{{ food.type }}/{{ food.img }}" alt="" />
+    </div>
+    <div class="amount-container">
+      <div class="d-flex justify-content-center">
+        <a (click)="minusAmount()">-</a>
+        <input min="1" value="1" type="number" />
+        <a (click)="plusAmount()">+</a>
+      </div>
+      <div class="d-flex justify-content-center" style="margin-top: 20px;">
+        <button (click)="addToCart()" style="float: right;">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />

@@ -1,0 +1,160 @@
+<div class="form-container">
+  <div id="leftSide">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <h1 style="border-bottom: 2px solid rgb(88, 223, 88);">
+        Detalii de facturare
+      </h1>
+      <div class="form-group">
+        <label for="exampleInputEmail1"> Address: </label>
+        <input
+          ngModel
+          name="adress"
+          required
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1"> Phone: </label>
+        <input
+          ngModel
+          name="phone"
+          required
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1"> Email adress: </label>
+        <input
+          ngModel
+          name="email"
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Additional information</label>
+        <textarea
+          ngModel
+          name="addInformation"
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          name="inlineRadioOptions"
+        ></textarea>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input
+          ngModel
+          class="form-check-input"
+          type="radio"
+          name="inlineRadioOptions"
+          id="inlineRadio1"
+          value="payOnline"
+          checked="checked"
+        />
+        <label class="form-check-label" for="inlineRadio1">Pay online</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          ngModel
+          class="form-check-input"
+          type="radio"
+          name="inlineRadioOptions"
+          id="inlineRadio1"
+          value="cashOnDelivery"
+        />
+        <label class="form-check-label" for="inlineRadio1"
+          >Cash on delivery</label
+        >
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          ngModel
+          class="form-check-input"
+          type="radio"
+          id="inlineRadio1"
+          name="inlineRadioOptions"
+          value="personalLift"
+        />
+        <label class="form-check-label" for="inlineRadio1">personal lift</label>
+      </div>
+      <button
+        [disabled]="!f.valid"
+        type="submit"
+        class="btn btn-primary"
+        id="submit-btn"
+      >
+        Submit
+      </button>
+    </form>
+    <div
+      class="p-3 mb-2 bg-success text-white"
+      style="border-radius: 20px; margin-top: 50px;"
+      *ngIf="send"
+    >
+      <h1 style="font-weight: 600; text-align: center;">
+        the order was sent successfully !!
+      </h1>
+    </div>
+  </div>
+
+  <div id="rightSide">
+    <h1 style="border-bottom: 2px solid red;">Comanda ta</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" style="width: 80%;">Produs</th>
+
+          <th scope="col" style="width: 20%;">Sub-total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <th
+            scope="row"
+            style="
+              text-decoration: underline wavy;
+              text-decoration-color: rgb(247, 97, 217);
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              font-size: 18px;
+            "
+          >
+            {{ item.itemName }} &nbsp;x {{ item.quantity }}
+          </th>
+
+          <td
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+            "
+          >
+            {{ item.quantity * item.itemPrice }} ron
+          </td>
+        </tr>
+        <tr
+          style="
+            border-bottom: 1px solid #dee2e6;
+            border-top: 1px solid #dee2e6;
+          "
+        >
+          <th scope="row">Sub-total</th>
+
+          <td style="font-weight: 600;">{{ finalPrice }} Ron</td>
+        </tr>
+        <tr>
+          <th scope="row">Total</th>
+
+          <td style="font-weight: 600;">{{ finalPrice }} Ron</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

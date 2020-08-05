@@ -1,0 +1,33 @@
+<div class="menu-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="menu-content">
+    <h1 style="margin-bottom: 64px;">THE MENU</h1>
+
+    <div class="buttons-container" *ngIf="promiseForFood | async">
+      <div id="type" class="buttons">
+        {{ food[0].type }}
+      </div>
+
+      <div id="next" class="buttons">
+        <pagination-controls
+          class="my-pagination"
+          (pageChange)="p = $event"
+        ></pagination-controls>
+      </div>
+    </div>
+
+    <div id="pizza">
+      <app-food-template
+        *ngFor="
+          let item of food | paginate: { itemsPerPage: 5, currentPage: p }
+        "
+        [food]="item"
+      ></app-food-template>
+      <div class="d-flex justify-content-center" style="width: 100%;">
+        <pagination-controls
+          class="my-pagination2"
+          (pageChange)="p = $event; onActivate()"
+        ></pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>
